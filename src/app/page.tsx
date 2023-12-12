@@ -1,13 +1,8 @@
 import { PiSoundcloudLogo } from "react-icons/pi";
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/5SoOTbnPGHP
- */
-import Link from "next/link";
-
+import { ProjectCard } from "@/components/ProjectCard";
 export default function Component() {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 py-12 md:py-24 lg:py-32 bg-white dark:bg-black">
+    <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 py-12 md:py-24 lg:py-32 bg-black">
       <div className="flex flex-col items-center justify-center space-y-4">
         <img
           alt="Profile Picture"
@@ -20,10 +15,8 @@ export default function Component() {
           }}
           width="200"
         />
-        <h2 className="text-2xl font-bold text-black dark:text-white">
-          Yunative
-        </h2>
-        <p className="text-sm text-zinc-400 dark:text-zinc-500">Compose/Code</p>
+        <h2 className="text-2xl font-bold text-white">Yunative</h2>
+        <p className="text-sm text-zinc-500">Compose/Code</p>
         <div className="flex items-center space-x-4">
           <a
             aria-label="Twitter Link"
@@ -31,7 +24,7 @@ export default function Component() {
             target="_blank"
           >
             <svg
-              className=" text-zinc-400 dark:text-zinc-500"
+              className=" text-zinc-500"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -51,7 +44,7 @@ export default function Component() {
             target="_blank"
           >
             <svg
-              className=" text-zinc-400 dark:text-zinc-500"
+              className=" text-zinc-500"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -86,36 +79,30 @@ export default function Component() {
             />
           </a>
         </div>
-        {/* <div className="flex items-center mt-4">
-          <p className="text-sm text-zinc-400 dark:text-zinc-500 mr-2">
-            Switch to:
-          </p>
-          <label className="flex items-center cursor-pointer">
-            <div className="relative">
-              <input className="hidden" type="checkbox" />
-              <div className="toggle__line w-10 h-4 bg-zinc-200 rounded-full shadow-inner" />
-              <div className="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0" />
-            </div>
-            <div className="ml-3 text-sm font-medium text-zinc-400 dark:text-zinc-500">
-              <p className="text-sm">Music</p>
-            </div>
-          </label>
-        </div> */}
       </div>
-      <div className="col-span-2 flex flex-col items-start space-y-4 mt-4 md:mt-0 ml-8">
-        <h3 className="text-xl font-bold mb-4 text-black dark:text-white">
-          Projects
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <p>Work In Progress...</p>
-          {/* <div className="w-full rounded-lg shadow-md bg-zinc-800 dark:bg-white p-4">
-            <Link
-              className="text-sm text-zinc-400 dark:text-zinc-500 underline"
-              href="#"
-            >
-              Project 1
-            </Link>
-          </div> */}
+      <div className="col-span-2 flex flex-col items-start mt-4 md:mt-0 ml-8">
+        <h3 className="text-xl font-bold text-white mb-0">Projects</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-4 pr-8">
+          <ProjectCard
+            title="Beyond"
+            date="2023/10"
+            description="2023年秋M3にてComputer Societyより頒布したアルバム「NEO NEON」収録曲"
+            imgpath="./neoneon.png"
+            url="https://soundcloud.com/yunative/beyond"
+          />
+          <ProjectCard
+            title="ノックする宇宙"
+            date="2023/10"
+            description="2023年秋M3にて楽曲制作会KMMより頒布したアルバム「Mixture Vol.2」収録　ひロせとの合作曲"
+            url="https://soundcloud.com/user-220270988-135906403/yunative"
+          />
+          <ProjectCard
+            title="Leap"
+            date="2023/4"
+            description="2023年春M3にてComputer Societyより頒布したアルバム「BLUE BLUR」収録曲"
+            imgpath="./blueblur.png"
+            url="https://soundcloud.com/yunative/leap"
+          />
         </div>
       </div>
     </section>
