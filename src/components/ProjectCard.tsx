@@ -3,13 +3,15 @@ interface ProjectCardProps {
   title: string;
   date: string;
   description: string;
+  to: string;
   imgpath?: string;
-  url: string;
+  url?: string;
 }
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   date,
   description,
+  to,
   imgpath,
   url,
 }) => {
@@ -23,6 +25,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           <h4 className="text-base text-zinc-200 font-semibold">{title}</h4>
           <h5 className="text-sm text-zinc-300">{date}</h5>
           <p className="text-sm text-zinc-300 mt-2">{description}</p>
+          <p className="text-xs text-zinc-300 text-right absolute bottom-1 right-3">
+            {to}
+          </p>
         </div>
       </a>
     </div>

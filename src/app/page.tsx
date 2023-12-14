@@ -82,19 +82,21 @@ export default function Component() {
       </div>
       <div className="col-span-2 flex flex-col items-start mt-4 md:mt-0 ml-8">
         <h3 className="text-xl font-bold text-white mb-0">Projects</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-4 pr-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-4 pr-8">
           <ProjectCard
             title="Beyond"
             date="2023/10"
             description="2023年秋M3にてComputer Societyより頒布したアルバム「NEO NEON」収録曲"
             imgpath="./neoneon.png"
             url="https://soundcloud.com/yunative/beyond"
+            to="SoundCloud >>>"
           />
           <ProjectCard
             title="ノックする宇宙"
             date="2023/10"
             description="2023年秋M3にて楽曲制作会KMMより頒布したアルバム「Mixture Vol.2」収録　ひロせとの合作曲"
             url="https://soundcloud.com/user-220270988-135906403/yunative"
+            to="SoundCloud >>>"
           />
           <ProjectCard
             title="Leap"
@@ -102,6 +104,7 @@ export default function Component() {
             description="2023年春M3にてComputer Societyより頒布したアルバム「BLUE BLUR」収録曲"
             imgpath="./blueblur.png"
             url="https://soundcloud.com/yunative/leap"
+            to="SoundCloud >>>"
           />
         </div>
       </div>
