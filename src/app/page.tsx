@@ -108,6 +108,13 @@ export default function Component() {
               to="SoundCloud >>>"
             />
             <ProjectCard
+              title="MC-Discord"
+              date="2021~"
+              description="マイクラとDiscordの連携機能が充実したDiscordボット"
+              url="https://github.com/yi7242/MC-Discord"
+              to="GitHub >>>"
+            />
+            <ProjectCard
               title="9 Keys"
               date="2020~"
               description="テンキーで遊べる音楽ゲーム"
@@ -118,7 +125,44 @@ export default function Component() {
           </div>
         </div>
       </section>
-      <section className="py-12 md:py-24 lg:py-32 ml-8 flex flex-col gap-4">
+      <section className="py-12 md:py-24 lg:py-32 ml-12 flex flex-col gap-10">
+        <div>
+          <h3 className="pb-10">以下突貫工事, work in progress...</h3>
+          <h3 className="text-2xl font-bold mb-0 underline underline-offset-4">
+            About Me
+          </h3>
+          <div className="flex flex-col gap-4 pt-2">
+            <div>
+              <h4 className="font-semibold text-lg">やってること</h4>
+              <ul className="list-inside list-disc">
+                <li>三味線</li>
+                <li>作曲</li>
+                <li>競プロ</li>
+                <li>その他開発色々...</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg">好きなもの</h4>
+              <ul className="list-inside list-disc">
+                <li>音楽</li>
+                <li>Valorant</li>
+                <li>Leo/need, モモジャン</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold mb-0 underline underline-offset-4">
+            Timeline
+          </h3>
+          <div className="flex flex-col gap-4 pt-2">
+            <div>
+              <h4 className="font-semibold text-lg">2022/4~</h4>
+              <p>慶應義塾大学 環境情報学部</p>
+              <p>中村研究会 Delightグループ</p>
+            </div>
+          </div>
+        </div>
         <div>
           <h3 className="text-2xl font-bold mb-0 underline underline-offset-4">
             Awards
@@ -142,14 +186,12 @@ export default function Component() {
           </h3>
           <div className="flex flex-col gap-4 pt-2">
             <div>
-              <h4 className="font-semibold text-lg">2024/6</h4>
-              <p>Googleパスキーハッカソン優勝</p>
-              <p>(パスキーを使用したスマートロックの制作)</p>
+              <h4 className="font-semibold text-lg">2023/7</h4>
+              <p>TOEIC IP 990</p>
             </div>
             <div>
-              <h4 className="font-semibold text-lg">2024/5</h4>
-              <p className="">インテル Future Tech アイデアソン最優秀賞受賞</p>
-              <p>(教育支援向け課題解決支援AIの提案)</p>
+              <h4 className="font-semibold text-lg">2023/4</h4>
+              <p>応用情報技術者試験合格</p>
             </div>
           </div>
         </div>
