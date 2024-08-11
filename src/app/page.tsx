@@ -2,7 +2,7 @@ import { PiSoundcloudLogo } from "react-icons/pi";
 import { ProjectCard } from "@/components/ProjectCard";
 export default function Component() {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 py-12 md:py-24 lg:py-32 bg-red-700">
+    <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 py-12 md:py-24 lg:py-32 bg-black">
       <div className="flex flex-col items-center justify-center space-y-4">
         <img
           alt="Profile Picture"
@@ -109,7 +109,7 @@ export default function Component() {
           <ProjectCard
             title="9 Keys"
             date="2020~"
-            description="テンキーで遊べる音ゲー"
+            description="テンキーで遊べる音楽ゲーム"
             imgpath="./9keys_s.png"
             url="https://unityroom.com/games/9keys"
             to="Unityroomで遊ぶ >>>"
