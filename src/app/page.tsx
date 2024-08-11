@@ -2,7 +2,7 @@ import { PiSoundcloudLogo } from "react-icons/pi";
 import { ProjectCard } from "@/components/ProjectCard";
 export default function Component() {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 py-12 md:py-24 lg:py-32 bg-black">
+    <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 py-12 md:py-24 lg:py-32 bg-red-700">
       <div className="flex flex-col items-center justify-center space-y-4">
         <img
           alt="Profile Picture"
@@ -87,7 +87,7 @@ export default function Component() {
             title="Beyond"
             date="2023/10"
             description="2023年秋M3にてComputer Societyより頒布したアルバム「NEO NEON」収録曲"
-            imgpath="./neoneon.png"
+            imgpath="./neoneon_s.png"
             url="https://soundcloud.com/yunative/beyond"
             to="SoundCloud >>>"
           />
@@ -102,9 +102,17 @@ export default function Component() {
             title="Leap"
             date="2023/4"
             description="2023年春M3にてComputer Societyより頒布したアルバム「BLUE BLUR」収録曲"
-            imgpath="./blueblur.png"
+            imgpath="./blueblur_s.png"
             url="https://soundcloud.com/yunative/leap"
             to="SoundCloud >>>"
+          />
+          <ProjectCard
+            title="9 Keys"
+            date="2020~"
+            description="テンキーで遊べる音ゲー"
+            imgpath="./9keys_s.png"
+            url="https://unityroom.com/games/9keys"
+            to="Unityroomで遊ぶ >>>"
           />
         </div>
       </div>
