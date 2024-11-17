@@ -185,7 +185,7 @@ export default function Component() {
                 className="underline"
                 href="https://web.dev/blog/passkeys-hackathon-tokyo?hl=en"
               >
-                <p className="">Googleパスキーハッカソン優勝</p>
+                <p className="">Passkeys Hackathon Tokyo優勝</p>
                 <p className="">(パスキーを使用したスマートロックの制作)</p>
               </Link>
             </div>
