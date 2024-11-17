@@ -1,5 +1,6 @@
 import { PiSoundcloudLogo } from "react-icons/pi";
 import { ProjectCard } from "@/components/ProjectCard";
+import Link from "next/link";
 export default function Component() {
   return (
     <>
@@ -158,8 +159,18 @@ export default function Component() {
           <div className="flex flex-col gap-4 pt-2">
             <div>
               <h4 className="font-semibold text-lg">2022/4~</h4>
-              <p>慶應義塾大学 環境情報学部</p>
-              <p>中村研究会 Delightグループ</p>
+              <Link
+                className="underline"
+                href="https://delight.sfc.wide.ad.jp/"
+              >
+                <p className="">慶應義塾大学 環境情報学部</p>
+                <p className="">中村研究会 Delightグループ</p>
+              </Link>
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg">2024/8</h4>
+              <p>セキュリティキャンプ2024全国大会</p>
+              <p>S03(TEEビルド＆スクラップ)ゼミ</p>
             </div>
           </div>
         </div>
@@ -168,15 +179,27 @@ export default function Component() {
             Awards
           </h3>
           <div className="flex flex-col gap-4 pt-2">
-            <div>
+            <div className="">
               <h4 className="font-semibold text-lg">2024/6</h4>
-              <p>Googleパスキーハッカソン優勝</p>
-              <p>(パスキーを使用したスマートロックの制作)</p>
+              <Link
+                className="underline"
+                href="https://web.dev/blog/passkeys-hackathon-tokyo?hl=en"
+              >
+                <p className="">Googleパスキーハッカソン優勝</p>
+                <p className="">(パスキーを使用したスマートロックの制作)</p>
+              </Link>
             </div>
             <div>
               <h4 className="font-semibold text-lg">2024/5</h4>
-              <p className="">インテル Future Tech アイデアソン最優秀賞受賞</p>
-              <p>(教育支援向け課題解決支援AIの提案)</p>
+              <Link
+                className="underline"
+                href="https://news.mynavi.jp/techplus/article/20240617-2965967/"
+              >
+                <p className="">
+                  インテル Future Tech アイデアソン最優秀賞受賞
+                </p>
+                <p className="">(教育支援向け課題解決支援AIの提案)</p>
+              </Link>
             </div>
           </div>
         </div>
